@@ -9,7 +9,7 @@ Contributions are always welcome!
 -I'll update this tool frequently, if you have any suggestions or if you want to help this tool feel free to dm me on discord HSSL#0069
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Screenshot](https://cdn.discordapp.com/attachments/940974446720729088/971312020400001034/ssssssssssss.png)
 
 
 ## Support
