@@ -15,10 +15,10 @@ Contributions are always welcome!
 ## Support
 
 For support, join our discord server
-## Features
+## ToDO:
 
-- Clean UI
-- Every command is customizable
+- Cleaner UI
+- Make every command is customizable
 - Tip and help massege on every command
 ## Installation
 
