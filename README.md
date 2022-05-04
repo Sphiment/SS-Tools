@@ -22,4 +22,4 @@ For support, join our discord server
 - Tip and help massege on every command
 ## Installation
 
-Just download and run the batch command
+Just download the latest verion https://github.com/Sphiment/SS-Tools/releases and run the batch command
