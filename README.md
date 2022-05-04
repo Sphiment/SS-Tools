@@ -18,7 +18,7 @@ For support, join our discord server
 ## ToDO:
 
 - Cleaner UI
-- Make every command is customizable
+- Make every command customizable
 - Tip and help massege on every command
 ## Installation
 
