@@ -2,101 +2,83 @@ Windows Registry Editor Version 5.00
 ;Every single reg of thoose is written by me so, please if you want to use it credit me ~Sphiment
 
 [HKEY_CURRENT_USER\Control Panel\Desktop]
-"AutoEndTasks"="1" ;Automatically end Non-Responsive apps
-"WaitToKillAppTimeout"="1000" ;Waiting time to end apps timeout during shutdown
-"MenuShowDelay"="0" ;0 show delay in menu
-"HungAppTimeout"="1000" ;Waiting time to end apps during shutdown
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
-"AutoRestartShell"=dword:00000001 ;Restart the shell automatically if there is any errors
+"AutoEndTasks"="1" ; Automatically end Non-Responsive apps
+"WaitToKillAppTimeout"="5000" ; Waiting time to end apps timeout during shutdown (5 seconds)
+"MenuShowDelay"="0" ; No delay in showing menus
+"HungAppTimeout"="1000" ; Waiting time to end apps during shutdown (1 second)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
-"WaitToKillServiceTimeout"="1000" ;Waiting time to end services during shutdown
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power\PowerThrottling]
-"PowerThrottlingOff"=dword:00000001 ;Disable Power Throttling
+"WaitToKillServiceTimeout"="5000" ; Waiting time to end services during shutdown (5 seconds)
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
-"LargeSystemCache"=dword:00000001 ;Larger system cache
-"SecondLevelDataCache"=dword:00000400 ;L2 CPU cache
-"FeatureSettings"=dword:00000000 ;Disable Mitigations
-"FeatureSettingsOverride"=dword:00000003 ;Disable Mitigations
-"FeatureSettingsOverrideMask"=dword:00000003 ;Disable Mitigations
+"LargeSystemCache"=dword:00000001 ; Enable larger system cache
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
-"AppCaptureEnabled"=dword:00000000 ;Disable GameDVR
-
-[HKEY_CURRENT_USER\System\GameConfigStore]
-"GameDVR_Enabled"=dword:00000000 ;Disable GameDVR
+"AppCaptureEnabled"=dword:00000000 ; Disable GameDVR
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
-"NetworkThrottlingIndex"=dword:ffffffff ;Disable Network Throttling
-"SystemResponsiveness"=dword:00000000 ;lower-Priority applications will use only %10 of the CPU
+"NetworkThrottlingIndex"=dword:ffffffff ; Disable Network Throttling (assuming you have a fast and stable network connection)
+"SystemResponsiveness"=dword:00000000 ; Lower-priority applications will use only %10 of the CPU
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
-"GPU Priority"=dword:00000008 ;The GPU priority
-"Priority"=dword:00000006 ;The task priority
-"Scheduling Category"="High" ;After benchmarking, High Scheduling Category is better then Medium with 6 active priorities
-"SFIO Priority"="High" ;Prioritise games over other tasks 
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
-"MaintenanceDisabled"=dword:00000001 ;Disable Auto Maintenance
+"GPU Priority"=dword:00000008 ; The GPU priority
+"Priority"=dword:00000006 ; The task priority
+"Scheduling Category"="High" ; After benchmarking, High Scheduling Category is better than Medium with 6 active priorities
+"SFIO Priority"="High" ; Prioritize games over other tasks
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-"HibernateEnabled"=dword:00000000 ;Disable Hibernate
-
-[HKEY_CURRENT_USER\Control Panel\Mouse]
-"MouseHoverTime"="0" ;Waiting time to open a pop-up menu when you move the mouse cursor over an item
+"HibernateEnabled"=dword:00000000 ; Disable Hibernate
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
-"NoLowDiskSpaceChecks"=dword:00000001 ;Disable low disk space notifications
-"LinkResolveIgnoreLinkInfo"=dword:00000001 ;Windows only searches the current target path
-"NoResolveSearch"=dword:00000001 ;Prevents the system from conducting a comprehensive search of the target drive to resolve a shortcut
-"NoResolveTrack"=dword:00000001 ;Disable NFTS tracking features 
-"NoInternetOpenWith"=dword:00000001 ;Disable telemetry
+"NoLowDiskSpaceChecks"=dword:00000001 ; Disable low disk space notifications
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"DisallowShaking"=dword:00000001 ;Disable aero shake
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
-"fAllowToGetHelp"=dword:00000000 ;Disable Remote Assistance
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete]
-"Append Completion"="yes" ;Auto-Complete in Run
-"AutoSuggest"="yes" ;Auto-Suggest in Run
-
-[HKEY_CURRENT_USER\Control Panel\Keyboard]
-"KeyboardDelay"="0" ;Disable Keyboard delay
+"DisallowShaking"=dword:00000001 ; Disable Aero shake
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"ColorPrevalence"=dword:00000000 ;Disable taskbar color
-"EnableTransparency"=dword:00000000 ;Disable Transparency
-"AppsUseLightTheme"=dword:00000000 ;Enable dark mode for apps
-"SystemUsesLightTheme"=dword:00000000  ;Enable dark mode for system
+"ColorPrevalence"=dword:00000000 ; Disable taskbar color
+"EnableTransparency"=dword:00000000 ; Disable Transparency
+"AppsUseLightTheme"=dword:00000000 ; Enable dark mode for apps
+"SystemUsesLightTheme"=dword:00000000 ; Enable dark mode for the system
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
-"ColorPrevalence"=dword:00000000 ;Disable taskbar color
-"EnableAeroPeek"=dword:00000000 ;Disable Aero Peek
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
-"NonBestEffortLimit"=dword:00000000 ;Disable bandwidth limit
+"ColorPrevalence"=dword:00000000 ; Disable taskbar color
+"EnableAeroPeek"=dword:00000000 ; Disable Aero Peek
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting]
-"Disabled"=dword:00000001 ;Disable error reporting
+"Disabled"=dword:00000001 ; Disable error reporting
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PCHealth\ErrorReporting]
-"DoReport"=dword:00000000 ;Disable error reporting
+"DoReport"=dword:00000000 ; Disable error reporting
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
-"Disabled"=dword:00000001 ;Disable error reporting
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
-"AllowCortana"=dword:00000000 ;Disable Cortana
-"AllowSearchToUseLocation"=dword:00000000 ;Prevent Cortana from accessing to location
-"AllowCloudSearch"=dword:00000000 ;Prevent Cortana from searching in cloud 
-"DisableWebSearch"=dword:00000001 ;Prevent Cortana from web searching
-"ConnectedSearchUseWebOverMeteredConnections"=dword:00000000 ;Prevent search queries on the web over metered connections
-"ConnectedSearchUseWeb"=dword:00000000 ;Prevent search queries on the web
+"Disabled"=dword:00000001 ; Disable error reporting
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
 "HwSchMode"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnableSuperfetch"=dword:00000000 ; Disable Superfetch
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+"TcpAckFrequency"=dword:00000001 ; Enable TCP Ack Frequency
+"TCPNoDelay"=dword:00000001 ; Disable Nagle's algorithm
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoComplete]
+"Append Completion"="yes" ; Auto-Complete in Run
+"AutoSuggest"="yes" ; Auto-Suggest in Run
+
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"KeyboardDelay"="0" ; Disable Keyboard delay
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched]
+"NonBestEffortLimit"=dword:00000000 ; Disable bandwidth limit
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"EnergyEfficientDynamics"=dword:00000000 ; Disable Dynamic Ticks
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM]
+"ColorizationOpaqueBlend"=dword:00000001 ; Disable transparent window borders
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR]
+"AppCaptureEnabled"=dword:00000000 ; Disable GameDVR
